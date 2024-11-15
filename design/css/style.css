@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  margin-left: 300px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+/****************************
+* サイドバー
+*****************************/
+.sidebar {
+  background: #000;
+  color: #A79F80;
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+body p{
+    color: #fff
+}
+/********************
+* サイト名
+*********************/
+.site-name {
+  background: #000;
+  width: 300px;
+  height: 300px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.site-name h1,
+.site-name p {
+  margin: 0;
+}
+.site-name h1 {
+  font-size: 42px;
+  line-height: 48px;
+}
+.site-name p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/*** nav ***/
+nav {
+  padding: 0 40px;
+}
+/********************
+* ページリスト
+*********************/
+.page-list {
+  margin: 40px 0;
+}
+.page-list li + li {
+  margin-top: 1em;
+}
+
+/********************
+* タグ
+*********************/
+.tags {
+  display: flex;
+  gap: 20px 16px;
+  flex-wrap: wrap;
+border: 1px #fff;
+}
+.tag {
+   
+  background: #000;
+  color: #fff;
+  padding: 4px 16px;
+  border-radius: 20px;
+  border: 1px #fff;
+}
+.tag:hover {
+  background: #444;
+  text-decoration: none;
+}
+
+
+/****************************
+* ヘッダー
+*****************************/
+header {
+background: #000;
+  position: relative;
+  height: 614px;
+}
+.header-copy {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: right;
+  margin: 0;
+}
+header img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/****************************
+* メイン
+*****************************/
+main {
+  position: relative;
+  color: #A79F80;
+}
+main img {
+   
+    margin: auto;
+  }
+h2 {
+  font-size: 24px;
+  margin: 0;
+ 
+}
+
+/********************
+* #section-1
+*********************/
+#section-1 {
+  max-width: 920px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background: #000;
+  border-radius: 20px;
+}
+#section-1 .text {
+  flex: 1 0 0;
+}
+
+/*** カード ***/
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+.card {
+  width: 480px;
+  padding: 40px;
+  border-radius: 20px;
+  background: #fff;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+/********************
+* #section-2
+* #section-3
+*********************/
+#section-2,
+#section-3 {
+  padding: 80px 67px;
+}
+#section-2 h2,
+#section-3 h2 {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+/********************
+* #section-2
+*********************/
+#section-2 {
+  background: #191812;
+  padding-top: 180px;
+}
+#section-2 .card {
+    background: #000;
+  }
+/********************
+* #section-3
+*********************/
+#section-3 {
+    background: #000;
+    padding-top: 180px;
+  }
+#section-3 .card {
+  background: #A79F80;
+  color: #000;
+}
+
+/****************************
+* フッター
+*****************************/
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+}
+.copyright {
+  font-size: 14px;
+}
